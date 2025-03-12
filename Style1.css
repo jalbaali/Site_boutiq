@@ -1,0 +1,101 @@
+
+        h1{ 
+            font-family: "NostalgicRemain-Regular";
+            font-size: 400%;
+            text-align: center;
+            color: black;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+        
+        @font-face{
+            font-family: "NostalgicRemain-Regular";
+            src: url("font/nostalgic_remain/NostalgicRemain-Regular.otf");
+            src: url("font/nostalgic_remain/NostalgicRemain-Regular.ttf") format("embedded-opentype");
+            src: url("font/nostalgic_remain/NostalgicRemain-Regular.woff");
+            src: url("font/nostalgic_remain/NostalgicRemain-Regular\ \(1\).woff2");
+        }
+
+        @keyframes bounce {
+            0%   {top: 10px;}
+            50%  {top: 20px;}
+            100%  {top: 10px;}
+        }
+  
+    body {
+        
+        background-color: rgb(202, 177, 223);
+        background-image : url("https://static.vecteezy.com/system/resources/previews/005/467/286/non_2x/seamless-background-with-pastel-polka-dots-free-vector.jpg");
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+        
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        font-family: Courier New, monospace;
+        font-size: 100%;
+        color: rgb(212, 231, 231);
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    div .button{
+    text-align:center;
+    }
+    
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+    .insidebox {
+        margin-top: 13%;
+        margin-left: 0%;
+        height: fit-content;
+    }
+    .box {
+        margin-top: 0%;
+        margin-left: 3%;
+        border: solid, 1px;
+        border-color: rgb(248, 222, 226);
+        border-radius: 25px;
+        padding: 20px; 
+        width: 90%;
+        height: 760px;
+        border:2px solid rgba(247, 215, 189, 0.9);
+        background-color: rgb(252, 248, 251);
+        
+        color: #b9adad;
+    }
+
+    .divider{
+        width:5px;
+        height:auto;
+        display:inline-block;
+    }
+    /*<!--boutons/liens-->*/
+    a{
+        color: rgb(48, 9, 9);
+        text-decoration: none;
+        }
+    a:hover{
+        color: rgb(196, 72, 34);
+
+    }
+    button{
+        width: 15%;
+        height: 90px;
+        background-color: rgb(255, 245, 235);
+        /*<!--background-image: rgba();-->*/
+        font-size: 160%;
+        font-family:"NostalgicRemain-Regular";
+        padding: 6px 20px;
+        border-radius: 50px;
+        
+        
+    }
+    

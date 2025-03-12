@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head> <meta charset=utf-8>
+<title>Bienvenue</title >
+    <link rel="stylesheet" type="text/css" href="./Style1.css">
+</head>
+<body class="a">
+  
+    <h1>Mouton</h1>
+<div class="box">
+  <div class="insidebox">
+    <p><img src="img/acceuil.png"  width=60% height=60% usemap="#sheep_" ></p></span>
+    
+    <div class="divider"></div>
+    
+    <!--<map name= "sheep_"> 
+    <area shape="rect" coords="60,0,230,400"  alt="door1"
+    href="salle_3.html.htm"></map>*/-->
+
+    <button><a href="gallery.html"> Boutique </a></button>
+    <button><a href="gallery.html"> Galerie </a></button>
+     </div></div>
+    
+    <p></p>
+    
+</body>
+<footer></footer>
