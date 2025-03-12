@@ -42,7 +42,7 @@
     }
 
     div .button{
-    text-align:right;
+    text-align:center;
     }
 
     .insidebox {
@@ -80,13 +80,14 @@
 
     }
     button{
-        width: 25%;
-        height: 15%;
-        background-color: rgba(241, 228, 213, 0.959);
-        font-size: 150%;
+        width: 15%;
+        height: 90px;
+        background-color: rgba(255, 233, 207, 0);
+        background-image: url(img/sheep.jpg);
+        font-size: 50px;
         font-family:"NostalgicRemain-Regular";
         padding: 6px 20px;
-        border-radius: 20px;
+        border-radius: 50px;
         
     }
     
