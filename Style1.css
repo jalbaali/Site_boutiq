@@ -1,98 +1,110 @@
 
-        h1{ 
-            font-family: "NostalgicRemain-Regular";
-            font-size: 400%;
-            text-align: center;
-            color: rgb(252, 236, 236);
-            position: relative;
-            animation: bounce 2s infinite;
-        }
-        
-        @font-face{
-            font-family: "NostalgicRemain-Regular";
-            src: url("font/nostalgic_remain/NostalgicRemain-Regular.otf");
-            src: url("font/nostalgic_remain/NostalgicRemain-Regular.ttf") format("embedded-opentype");
-            src: url("font/nostalgic_remain/NostalgicRemain-Regular.woff");
-            src: url("font/nostalgic_remain/NostalgicRemain-Regular\ \(1\).woff2");
-        }
+h1{ 
+    font-family: "NostalgicRemain-Regular";
+    font-size: 500%;
+    text-align: center;
+    color: rgb(92, 27, 35);
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 8%;
+    animation: bounce 2s infinite;
+}
+@font-face{
+    font-family: "NostalgicRemain-Regular";
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.otf");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.ttf") format("embedded-opentype");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.woff");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular\ \(1\).woff2");
+}
 
-        @keyframes bounce {
-            0%   {top: 10px;}
-            50%  {top: 20px;}
-            100%  {top: 10px;}
-        }
-  
-    body {
-        cursor: url("img/curseur.png"),auto;
-        background-color: rgb(20, 2, 14);
-        background-blend-mode: hard-light;
-        background-repeat: no-repeat;
-        
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        font-family: Courier New, monospace;
-        font-size: 100%;
-        color: rgb(212, 231, 231);
-        text-align: left;
-    }
+@font-face{
+    font-family: "NostalgicRemain-Regular";
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.otf");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.ttf") format("embedded-opentype");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular.woff");
+    src: url("font/nostalgic_remain/NostalgicRemain-Regular\ \(1\).woff2");
+}
 
-    ul {
-        list-style-type: none;
-    }
+@keyframes bounce {
+    0%   {top: 10px;}
+    50%  {top: 20px;}
+    100%  {top: 10px;}
+}
 
-    div .button{
-    text-align:center;
-    }
 
-    .insidebox {
-        margin-top: 20%;
-        margin-left: 10%;
-    }
-    .box {
-        margin-top: 2%;
-        margin-left: 4%;
-        border: solid, 1px;
-        border-color: rgb(255, 249, 250);
-        border-radius: 30px;
-        
-        width: 1700px;
-        height: 900px;
-        border:2px solid rgba(255, 227, 250, 0.9);
-        /*background-color: rgb(252, 248, 251);
-        padding-top: 0%;
-        color: #b9adad00;*/
-    }
+body {
+cursor: url("img/curseur.png") 15 15,pointer;
+background-color: rgb(20, 2, 14);
+background-image: url(img/background.png);
+background-blend-mode: hard-light;
+background-repeat: no-repeat;
 
-    .divider{
-        width:5px;
-        height:auto;
-        display:inline-block;
-    }
-    /*<!--boutons/liens-->*/
-    a{
-        color: rgb(48, 9, 9);
-        text-decoration: none;
-        }
-    a:hover{
-        color: rgb(196, 34, 129);
+background-attachment: fixed;
+background-size: 100% 100%;
+font-family: Courier New, monospace;
+font-size: 100%;
+color: rgb(212, 231, 231);
+text-align: left;
+}
 
-    }
+ul {
+list-style-type: none;
+}
 
-    .dessus{
-        image-resolution: 300dpi;
-        position: absolute;
-        z-index: -1;
-    }
+div .button{
+text-align:center;
+}
 
-    button{
-        margin-left: 20%;
-        width: 15%;
-        height: 90px;
-        background-color: rgba(224, 213, 199, 0);
-        font-size: 300%;
-        font-family:"NostalgicRemain-Regular";
-        padding: 6px 20px;
-        border-color: rgba(240, 248, 255, 0);
-        
-    }
-    
+.insidebox {
+margin-top: 20%;
+margin-left: 10%;
+}
+.box {
+margin-top: 2%;
+margin-left: 4%;
+border: solid, 1px;
+border-color: rgb(255, 249, 250);
+border-radius: 30px;
+
+width: 1700px;
+height: 900px;
+border:2px solid rgba(255, 227, 250, 0.9);
+/*background-color: rgb(252, 248, 251);
+padding-top: 0%;
+color: #b9adad00;*/
+}
+
+.divider{
+width:5px;
+height:auto;
+display:inline-block;
+}
+/*<!--boutons/liens-->*/
+a{
+color: rgb(48, 9, 9);
+text-decoration: none;
+}
+a:hover{
+color: rgb(202, 50, 101);
+cursor: url("img/curseur.png") 15 15,auto;
+}
+
+.dessus{
+image-resolution: 300dpi;
+position: absolute;
+z-index: -1;
+}
+
+button{
+cursor: url("img/curseur.png") 15 15,auto;
+margin-left: 20%;
+width: 15%;
+height: 90px;
+background-color: rgba(224, 213, 199, 0);
+font-size: 300%;
+font-family:"NostalgicRemain-Regular";
+padding: 6px 20px;
+border-color: rgba(240, 248, 255, 0);
+
+}
+
