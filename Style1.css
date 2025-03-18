@@ -9,13 +9,6 @@ h1{
     margin-top: 8%;
     animation: bounce 2s infinite;
 }
-@font-face{
-    font-family: "NostalgicRemain-Regular";
-    src: url("font/nostalgic_remain/NostalgicRemain-Regular.otf");
-    src: url("font/nostalgic_remain/NostalgicRemain-Regular.ttf") format("embedded-opentype");
-    src: url("font/nostalgic_remain/NostalgicRemain-Regular.woff");
-    src: url("font/nostalgic_remain/NostalgicRemain-Regular\ \(1\).woff2");
-}
 
 @font-face{
     font-family: "NostalgicRemain-Regular";
