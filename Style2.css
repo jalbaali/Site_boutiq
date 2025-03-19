@@ -20,8 +20,7 @@ h1{
 body {
 
 background-color: rgb(22, 18, 19);
-background-image : url("https://static.vecteezy.com/system/resources/previews/005/467/286/non_2x/seamless-background-with-pastel-polka-dots-free-vector.jpg");
-background-blend-mode: darken;
+background-image : url("img/background2.png");
 background-repeat: no-repeat;
 
 background-attachment: fixed;
