@@ -51,16 +51,18 @@ text-align:center;
 .insidebox {
 margin-top: 20%;
 margin-left: 10%;
+margin-bottom: 20%;
 }
 .box {
+    padding-left: 30px;
 margin-top: 2%;
 margin-left: 4%;
 border: solid, 1px;
 border-color: rgb(255, 249, 250);
 border-radius: 30px;
 
-width: 1700px;
-height: 900px;
+width: 90%;
+height: 100%;
 border:2px solid rgba(255, 227, 250, 0.9);
 /*background-color: rgb(252, 248, 251);
 padding-top: 0%;
