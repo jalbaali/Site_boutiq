@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <head> <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Sheeps' Gallery</title >
     <link rel="stylesheet" type="text/css" href="./Style2.css">
+    <script>
+
+      function Inzoom(){
+        document.getElementById("zoom1").onclick= 
+      }
+    </script>
 </head>
 <body>
-   <h1>Sheeps' Gallery</h1>
+  <h1>Boite à persos</h1>
+    <header>
+      <nav><ul class="menu">
+        <li><a href="index.html"> Projets </a></li>
+        <li><a href="index.html"> Boutique </a></li>
+        <li><a href="index.html"> A propos </a></li>
+        <li><a href="index.html"> En construction </a></li>
+        </ul>
+      </nav>
+
+    </header>
     <div class="container">
 <div class="box">
    
   <div class="insidebox">
 
-    
+    <h2>Persos principaux</h2>
     <ul><li class="imglist">
-            <img class="zoom" src="img/Tao1.png"  width="300" height="300" usemap="#sheep_" >
-        <p>Image1</p></li>
+            <img class="zoom1" onclick="Inzoom()" src="img/Layla.png"  width="300" height="300" usemap="#sheep_" >
+            <p> Layla </p></li>
         <li class="imglist">
-        <img class="zoom" src="img/sheep.jpg"  width="300" height="300" usemap="#sheep_" >
-        <p>Caption 2</p></li>
+        <img class="zoom" src="img/Mica.png"  width="300" height="300" usemap="#sheep_" >
+        <p> Mica </p></li>
         <li class="imglist">
-        <img class="zoom" src="img/Taobg.png"  width="300" height="300" usemap="#sheep_" >
-        <p>Caption 3</p></li>
+        <img class="zoom" src="img/Nyth.png"  width="300" height="300" usemap="#sheep_" >
+        <p> Nyth </p></li>
+        <li class="imglist">
+          <img class="zoom" src="img/Team.png"  width="300" height="300" usemap="#sheep_" >
+          <p> Zayna </p></li>
+          </li>
     </ul>
-
+    <h2>Truc</h2>
     <ul >
-        <li class="imglist">
-        <img class="zoom" src="img/Team.png"  width="300" height="300" usemap="#sheep_" >
-        <p>Caption 4</p>
-        </li>
+        
         <li class="imglist">
         <img class="zoom" src="img/sheep.jpg"  width="300" height="300" usemap="#sheep_" >
-        <p>Caption 5</p>
+        <p> ok </p></li>
         </li>
         <li class="imglist">
         <img class="zoom" src="img/zay.png"  width="300" height="300" usemap="#sheep_" >
-        <p>Caption 6</p>
+        <p> Oe </p></li>
         </li>
+        <li class="imglist">
+          <img class="zoom" src="img/sheep.jpg"  width="300" height="300" usemap="#sheep_" >
+          <p> Mica </p></li>
+          <li class="imglist">
+          <img class="zoom" src="img/Taobg.png"  width="300" height="300" usemap="#sheep_" >
+          <p> Nyth </p></li>
+          
     </ul>
     
   </div>
 </div>
-    
+     <!--
   <ul class="menu">
     <li>
-        <button><a href="index.html"> Retour </a></button>
+        <button class="menub"><a href="index.html"> Projets </a></button>
     </li>
     <li>
-        <button><a href=""> en construction </a></button>
+        <button class="menub"><a href=""> Boutique </a></button>
     </li>
-</div>
+    <li>
+      <button class="menub"> <a href=""> en construction </a></button>
+  </li>
+  <li>
+    <button class="menub"> <a href=""> en construction </a></button>
+</li>
+<li>
+  <button class="menub"> <a href=""> en construction </a></button>
+</li>
+
+</div>-->
 </ul>
 </body>
 <footer></footer>

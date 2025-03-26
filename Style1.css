@@ -26,6 +26,8 @@ h1{
 
 
 body {
+    overflow-x: hidden;
+    overflow-y: hidden;
 cursor: url("img/curseur.png") 15 15,pointer;
 background-color: rgb(20, 2, 14);
 background-image: url(img/background.png);
