@@ -1,13 +1,12 @@
 
 h1{ 
+    margin-top: 1.5em;
     font-family: "NostalgicRemain-Regular";
     font-size: 500%;
     text-align: center;
-    color: rgb(92, 27, 35);
-    position: absolute;
-    margin-left: 28%;
-    margin-top: 8%;
-    animation: bounce 2s infinite;
+    color: rgb(34, 1, 16);
+    animation: bounce 6s infinite;
+    position: relative;
 }
 
 @font-face{
@@ -19,31 +18,37 @@ h1{
 }
 
 @keyframes bounce {
-    0%   {top: 10px;}
-    50%  {top: 20px;}
-    100%  {top: 10px;}
+    0%  {top: 0.15em;}
+    50% {top: 0.7em;}
+    100% {top: 0.15em;}
+}
+
+@keyframes balance {
+    0%  { transform:translateX(-10px) translateY(5px);} 
+    50% { transform:translateX(0px) translateY(15px);}  
+    100% { transform:translateX(10px) translateY(5px);} 
 }
 
 
 body {
+    /*pas scroll*/
     overflow-x: hidden;
     overflow-y: hidden;
-cursor: url("img/curseur.png") 15 15,pointer;
-background-color: rgb(20, 2, 14);
-background-image: url(img/background.png);
-background-blend-mode: hard-light;
-background-repeat: no-repeat;
+    /*curseur*/
+    cursor: url("img/curseur.png") 15 15,pointer;
+    /*fond*/
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 
-background-attachment: fixed;
-background-size: 100% 100%;
-font-family: Courier New, monospace;
-font-size: 100%;
-color: rgb(212, 231, 231);
-text-align: left;
 }
 
 ul {
 list-style-type: none;
+margin-top: 10em;
+margin-left: 17em;
+text-align: justify;
 }
 
 div .button{
@@ -51,21 +56,19 @@ text-align:center;
 }
 
 .insidebox {
-margin-top: 20%;
-margin-left: 10%;
-margin-bottom: 20%;
+text-align: center;
 }
 .box {
-    padding-left: 30px;
-margin-top: 2%;
-margin-left: 4%;
+margin: 4%;
+justify-content: center;
 border: solid, 1px;
 border-color: rgb(255, 249, 250);
-border-radius: 30px;
+border-radius: 2em;
 
 width: 90%;
 height: 100%;
-border:2px solid rgba(255, 227, 250, 0.9);
+border:0.15em solid rgba(255, 227, 250, 0.9);
+padding-bottom: 10%;
 /*background-color: rgb(252, 248, 251);
 padding-top: 0%;
 color: #b9adad00;*/
@@ -82,11 +85,12 @@ color: rgb(48, 9, 9);
 text-decoration: none;
 }
 a:hover{
-color: rgb(202, 50, 101);
+color: rgb(255, 86, 142);
 cursor: url("img/curseur.png") 15 15,auto;
 }
 
 .dessus{
+    animation: balance 4.6s ease-in-out infinite alternate;
 image-resolution: 300dpi;
 position: absolute;
 z-index: -1;
@@ -94,9 +98,9 @@ z-index: -1;
 
 button{
 cursor: url("img/curseur.png") 15 15,auto;
-margin-left: 20%;
+text-align: left;
 width: 15%;
-height: 90px;
+height: 2em;
 background-color: rgba(224, 213, 199, 0);
 font-size: 300%;
 font-family:"NostalgicRemain-Regular";
