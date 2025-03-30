@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head> <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>BoiteaSheeps</title >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/Style2.css">
+    <script>
+
+      document.addEventListener('DOMContentLoaded', () =>{
+        document
+          .querySelectorAll('.zoom-img')
+          .forEach((imageElement) => {
+            imageElement.addEventListener('click',() => {
+              let overlay = document.createElement('div');
+              overlay.classList.add('overlay');
+
+              let zoomedImage = document.createElement('img');
+              zoomedImage.classList.add('zoomed');
+              zoomedImage.src = imageElement.dataset.zoomedUrl;
+
+              document.body.style.overflow = 'hidden';
+
+              overlay.appendChild(zoomedImage);
+              document.body.appendChild(overlay);
+
+              
+              zoomedImage.addEventListener('click', () =>
+              overlay.remove());
+            
+              document.body.style.overflow = '';
+              
+              
+            });
+          });
+      });
+    
+    </script>
+</head>
+<body>
+  <h1>OCs</h1>
+    <header>
+      <nav><ul class="menu">
+        <li><a href="../pages/index.html"> Home </a></li>
+        <li><a href="../pages/Ocs.html"> Ocs </a></li>
+        <li><a href=""> Projets </a></li>
+        <li><a href=""> Boutique </a></li>
+        <li><a href=""> A propos </a></li>
+        <li><a href="../pages/galerie.html"> Galerie </a></li>
+        </ul>
+      </nav>
+    </header>
+  
+<div class="box">
+
+    <div class="fondtitre"><h2>Nebuleuses</h2></div>
+    <ul class="list_perso">
+        <!--img1-->
+      
+      
+           <li class="imglist"> 
+              <img class="zoom-img" src="../img/Layla.png" data-zoomed-url="../img/ref_Layla.png" width="300" height="300">
+            <p> Layla </p>
+            </li>
+
+          <!--img2-->
+        
+           <li class="imglist"> 
+              <img class="zoom-img" src="../img/Mica.png" data-zoomed-url="../img/Mica_fullbody.png" width="300" height="300">
+            <p> Mica </p>
+            </li>
+
+          <!--img3-->
+        
+            <!--image originale-->
+           <li class="imglist"> 
+              <img class="zoom-img" src="../img/Nyth.png" data-zoomed-url="../img/Nyth_fullbody.png" width="300" height="300">
+            <p> Mica </p>
+            </li>
+          <!--img4-->
+
+           <li class="imglist"> 
+            <img class="zoom-img" src="../img/Zeyna.png" data-zoomed-url="../img/Zeyna_fullbody.png" width="300" height="300">
+            <p> Zeyna </p>
+            </li>
+
+    
+    </ul>
+    <ul class="list_perso">
+        
+      <li class="imglist"> 
+        <img class="zoom-img" src="../img/Orphea.png" data-zoomed-url="../img/Orphea_fullbody.png" width="300" height="300">
+      <p> Orphéa </p>
+      </li>
+
+    <!--img2-->
+  
+     <li class="imglist"> 
+        <img class="zoom-img" src="../img/Narh.png" data-zoomed-url="../img/Narh_fullbody.png" width="300" height="300">
+      <p> Mica </p>
+      </li>
+
+    <!--img3-->
+  
+      <!--image originale-->
+     <li class="imglist"> 
+        <img class="zoom-img" src="../img/Rasha.png" data-zoomed-url="../img/Rasha_fullbody.png" width="300" height="300">
+      <p> Nahr </p>
+      </li>
+    <!--img4-->
+
+     <li class="imglist"> 
+      <img class="zoom-img" src="../img/Zeyna.png" data-zoomed-url="../img/Zeyna_fullbody.png" width="300" height="300">
+      <p> Zeyna </p>
+      </li>
+          
+    </ul>
+    
+  </div>
+
+
+</ul>
+</body>
+<footer></footer>
