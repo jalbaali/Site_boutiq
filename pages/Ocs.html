@@ -12,14 +12,21 @@
             imageElement.addEventListener('click',() => {
               let overlay = document.createElement('div');
               overlay.classList.add('overlay');
-
+            
               let zoomedImage = document.createElement('img');
               zoomedImage.classList.add('zoomed');
               zoomedImage.src = imageElement.dataset.zoomedUrl;
 
-              document.body.style.overflow = 'hidden';
+              let textBox = document.createElement('div');
+                textBox.classList.add('text-box');
+                textBox.innerHTML = `<h2>${imageElement.nextElementSibling.textContent}</h2>
+                                     <p>${imageElement.dataset.description}</p>`;
 
+
+              document.body.style.overflow = 'hidden';
+          
               overlay.appendChild(zoomedImage);
+              overlay.appendChild(textBox);
               document.body.appendChild(overlay);
 
               
@@ -39,7 +46,7 @@
   <h1>OCs</h1>
     <header>
       <nav><ul class="menu">
-        <li><a href="../pages/index.html"> Home </a></li>
+        <li><a href="../index.html"> Home </a></li>
         <li><a href="../pages/Ocs.html"> Ocs </a></li>
         <li><a href=""> Projets </a></li>
         <li><a href=""> Boutique </a></li>
@@ -57,7 +64,7 @@
       
       
            <li class="imglist"> 
-              <img class="zoom-img" src="../img/Layla.png" data-zoomed-url="../img/ref_Layla.png" width="300" height="300">
+              <img class="zoom-img" src="../img/Layla.png" data-description="<p>Layla est la disciple autoproclamée de Mica.</p><p>Pouvoir: Aucun</p>" data-zoomed-url="../img/ref_Layla.png" width="300" height="300">
             <p> Layla </p>
             </li>
 
@@ -73,7 +80,7 @@
             <!--image originale-->
            <li class="imglist"> 
               <img class="zoom-img" src="../img/Nyth.png" data-zoomed-url="../img/Nyth_fullbody.png" width="300" height="300">
-            <p> Mica </p>
+            <p> Nyth </p>
             </li>
           <!--img4-->
 
@@ -95,7 +102,7 @@
   
      <li class="imglist"> 
         <img class="zoom-img" src="../img/Narh.png" data-zoomed-url="../img/Narh_fullbody.png" width="300" height="300">
-      <p> Mica </p>
+      <p> Narh </p>
       </li>
 
     <!--img3-->
@@ -103,12 +110,12 @@
       <!--image originale-->
      <li class="imglist"> 
         <img class="zoom-img" src="../img/Rasha.png" data-zoomed-url="../img/Rasha_fullbody.png" width="300" height="300">
-      <p> Nahr </p>
+      <p> Rasha </p>
       </li>
     <!--img4-->
 
      <li class="imglist"> 
-      <img class="zoom-img" src="../img/Zeyna.png" data-zoomed-url="../img/Zeyna_fullbody.png" width="300" height="300">
+      <img class="zoom-img" src="../img/" data-zoomed-url="../img/" width="300" height="300">
       <p> Zeyna </p>
       </li>
           
